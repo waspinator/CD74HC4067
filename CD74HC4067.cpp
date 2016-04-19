@@ -46,4 +46,3 @@ void CD74HC4067::channel(int channel)
   digitalWrite(_s2, _g_channel_truth_table[channel][2]);
   digitalWrite(_s3, _g_channel_truth_table[channel][3]);
 }
-
