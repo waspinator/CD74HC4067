@@ -21,7 +21,7 @@ class CD74HC4067
   	int _s1;
   	int _s2;
   	int _s3;
-    int _channel;
+  	int _channel;
 
 };
 
