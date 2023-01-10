@@ -26,4 +26,3 @@ Use -1 for the control pins you want to leave out, eg. 4 channels: S0 on PIN 4 a
 Set the channel using the .channel() function
 
 `my_mux.channel(8);`
-
