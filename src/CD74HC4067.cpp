@@ -29,10 +29,10 @@ uint8_t _g_channel_truth_table[16][4] = {
 
 CD74HC4067::CD74HC4067(uint8_t s0, uint8_t s1, uint8_t s2, uint8_t s3)
 {
-  if(s0 >= 0) { pinMode(s0, OUTPUT); _s0 = s0; bytes++; }
-  if(s1 >= 0) { pinMode(s1, OUTPUT); _s1 = s1; bytes++; }
-  if(s2 >= 0) { pinMode(s2, OUTPUT); _s2 = s2; bytes++; }
-  if(s3 >= 0) { pinMode(s3, OUTPUT); _s3 = s3; bytes++; }
+  if(s0 < 255) { pinMode(s0, OUTPUT); _s0 = s0; bytes++; }
+  if(s1 < 255) { pinMode(s1, OUTPUT); _s1 = s1; bytes++; }
+  if(s2 < 255) { pinMode(s2, OUTPUT); _s2 = s2; bytes++; }
+  if(s3 < 255) { pinMode(s3, OUTPUT); _s3 = s3; bytes++; }
 }
 
 void CD74HC4067::channel(uint8_t channel)
