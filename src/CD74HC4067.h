@@ -8,20 +8,22 @@
 #define CD74HC4067_h
 
 #include "Arduino.h"
+#include <inttypes.h>
 
-extern int _g_channel_truth_table[16][4];
+extern uint8_t _g_channel_truth_table[16][4];
 
 class CD74HC4067
 {
   public:
-    CD74HC4067(int s0, int s1, int s2, int s3);
-    void channel(int channel);
+    CD74HC4067(uint8_t s0, uint8_t s1, uint8_t s2, uint8_t s3);
+    void channel(uint8_t channel);
   private:
-  	int _s0;
-  	int _s1;
-  	int _s2;
-  	int _s3;
-  	int _channel;
+  	uint8_t _s0;
+  	uint8_t _s1;
+  	uint8_t _s2;
+  	uint8_t _s3;
+  	uint8_t _channel;
+	uint8_t bytes;
 };
 
 #endif
