@@ -19,6 +19,11 @@ Create a new CD74HC4067 object, specifying the control pins, s0 s1, s2, s3.
 
 `CD74HC4067 my_mux(4, 5, 6, 7);`
 
+Use -1 for the control pins you want to leave out, eg. 4 channels: S0 on PIN 4 and S1 on PIN 5:
+Remember to connect theese left out control pins on the CD74HC4067 to ground.
+
+`CD74HC4067 my_mux(4, 5, -1, -1);`
+
 Set the channel using the .channel() function
 
 `my_mux.channel(8);`
